@@ -1,0 +1,49 @@
+body {
+  background-image: url("person-pointing-at-black-and-gray-film-camera-near-macbook-1051075.jpg");
+}
+
+.mheight-70 {
+  height: 70px;
+}
+.mheight-90 {
+  height: 90px;
+}
+.mheight-60 {
+  height: 60px;
+}
+.vh-95 {
+  height: 91vh;
+}
+.min-vh-95 {
+  height: 91vh;
+}
+.vh-85 {
+  height: 83vh;
+}
+.min-vh-85 {
+  height: 83vh;
+}
+.vh-75 {
+  height: 73vh;
+}
+.min-vh-75 {
+  height: 73vh;
+}
+.vh-70 {
+  height: 68vh;
+}
+.min-vh-70 {
+  height: 68vh;
+}
+.vh-60 {
+  height: 60vh;
+}
+.min-vh-60 {
+  height: 60vh;
+}
+.mh-95 {
+  max-height: 91%;
+}
+.h-95 {
+  height: 91%;
+}
