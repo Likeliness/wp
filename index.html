@@ -46,7 +46,7 @@
       <div class="row d-flex align-items-center my-2 bg-dark shadow min-vh-90">
         <div class="col">
           <div class="row d-flex justify-content-center" id="vkr">
-            <h1>В этом тысячелетии...</h1>
+            <h1 id="delMe">В этом тысячелетии...</h1>
           </div>
         </div>
       </div>
@@ -92,10 +92,15 @@
             console.log("User ID:" + data.response[0].id);
             let userName = document.createElement("h1");
             let userShow =
-              data.response[0].first_name + " " + data.response[0].last_name;
+              data.response[0].first_name +
+              " " +
+              data.response[0].last_name +
+              "игра будет готова в этом тысячелетии...";
             userName.innerHTML = userShow;
 
             vkr.prepend(userName);
+            let elem = document.getElementById("delMe");
+            elem.parentNode.removeChild(elem);
           });
         }
         // Your code here
