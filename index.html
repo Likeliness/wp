@@ -91,9 +91,11 @@
             console.log(data.response);
             alert("User ID:" + data.response[0].id);
             let userName = document.createElement("h1");
-
-            userName.innerHTML =
+            let userShow = function () {
               data.response[0].first_name + "" + data.response[0].last_name;
+            };
+            userName.innerHTML = userShow;
+
             vk.prepend(userName);
           });
         }
