@@ -89,7 +89,7 @@
         if ((vk = true)) {
           VK.api("users.get", {}, function (data) {
             console.log(data.response);
-            alert("User ID:" + data.response[0].id);
+            console.log("User ID:" + data.response[0].id);
             let userName = document.createElement("h1");
             let userShow =
               data.response[0].first_name + " " + data.response[0].last_name;
