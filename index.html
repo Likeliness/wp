@@ -91,9 +91,8 @@
             console.log(data.response);
             alert("User ID:" + data.response[0].id);
             let userName = document.createElement("h1");
-            let userShow = function () {
+            let userShow =
               data.response[0].first_name + "" + data.response[0].last_name;
-            };
             userName.innerHTML = userShow;
 
             vkr.prepend(userName);
