@@ -85,6 +85,12 @@
       function () {
         // API initialization succeeded
         console.log("succsess");
+        let vk = true;
+        if ((vk = true)) {
+          VK.addCallback("onLocationChanged", function f(location) {
+            alert("location: " + location);
+          });
+        }
         // Your code here
       },
       function () {
