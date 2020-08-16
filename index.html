@@ -106,6 +106,11 @@
             vkr.prepend(userName);
             let elem = document.getElementById("delMe");
             elem.parentNode.removeChild(elem);
+            let userPhoto = document.createElement("img");
+            let photoShow = data.response[0].photo_50;
+            userPhoto.src = photoShow;
+            userPhoto.innerHTML = "text";
+            vkr.prepend(userPhoto);
           });
         }
         // Your code here
