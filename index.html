@@ -90,10 +90,10 @@
         console.log("succsess");
         let vk = true;
         if ((vk = true)) {
-          VK.api("users.get", { fields: "photo_50" }, function (data) {
+          VK.api("users.get", { fields: "photo_max" }, function (data) {
             console.log(data.response);
             console.log("User ID:" + data.response[0].id);
-            console.log(data.response[0].photo_50);
+            console.log(data.response[0].photo_max);
             let userName = document.createElement("h1");
             let userShow =
               data.response[0].first_name +
@@ -107,7 +107,7 @@
             let elem = document.getElementById("delMe");
             elem.parentNode.removeChild(elem);
             let userPhoto = document.createElement("img");
-            let photoShow = data.response[0].photo_50;
+            let photoShow = data.response[0].photo_max;
             userPhoto.src = photoShow;
             userPhoto.innerHTML = "text";
             vkr.prepend(userPhoto);
