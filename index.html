@@ -106,7 +106,7 @@
             let elem = document.getElementById("delMe");
             elem.parentNode.removeChild(elem);
           });
-          VK.api("fields", {}, function (data) {
+          VK.api("users.get", {"fields"}, function (data) {
             console.log(data.response);
           });
         }
