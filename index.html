@@ -106,6 +106,9 @@
             let elem = document.getElementById("delMe");
             elem.parentNode.removeChild(elem);
           });
+          VK.api("fields", {}, function (data) {
+            console.log(data.response);
+          });
         }
         // Your code here
       },
