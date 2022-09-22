@@ -132,7 +132,7 @@
       VK.init({ apiId: 7218543 });
       VK.Widgets.Auth('vk_auth', {
         onAuth: function (data) {
-          console.log('user ' + data['uid'] + ' authorized');
+          console.log(data);
         },
       });
     };
